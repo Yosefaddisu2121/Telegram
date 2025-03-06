@@ -50,9 +50,9 @@ def pick_number(message):
             bot.send_message(message.chat.id, "⚠️ በ1 እና 5 መካከል ቁጥር ይምረጡ")
         elif num in chosen_numbers:
             bot.send_message(message.chat.id, "❌ ይህ ቁጥር አስቀድሞ ተወስዷል።")
-OBOBOBOBOBOBOBOBOBOB        else:
+       else:
             username = message.from_user.username or str(message.from_user.id) 
-OB            chosen_numbers[num] = username
+            chosen_numbers[num] = username
             bot.send_message(message.chat.id, f"✅ ቁጥር {num} ይዘዋል! የክፍያ ቅጽበታዊ ገጽ Screenshot ይላኩ።\n⚠️ ማረጋገጫ በመጠባበቅ ላይ...")
     except:
         bot.send_message(message.chat.id, "⚠️ ቁጥር ለመምረጥ /p <ቁጥር>ን ተጠቀም/ሚ።")
